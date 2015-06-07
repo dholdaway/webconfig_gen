@@ -21,7 +21,7 @@ app.controller('Convert', function ($scope) { //Main Controller
 			alert("This browser doesn't seem to support the `files` property of file inputs.");
 		}
 		else if (!input.files[0]) {
-			alert("Please select a file before clicking 'Convert'");               
+			alert("Please select a file before clicking 'Generate'");
 		}
 		else {
 			file = input.files[0]; //Store Input in variable
