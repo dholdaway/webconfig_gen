@@ -11,8 +11,8 @@ orignalURL,redirectURL
 
 eg, 
 
-`http://alexsah.com/abcd,http://google.com`
-`http://alexsah.com/efgh,http://bing.com`
+`http://alexsah.com/abcd,http://google.com`<br>
+`http://alexsah.com/efgh,http://bing.com`<br>
 `http://alexsah.com/ijkl/mnop/qrst,http://yahoo.com`
 
 (example.csv)
