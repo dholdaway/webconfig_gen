@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSV Convert</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type="text/javascript" src="js/jquery.csv.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/mainController.js"></script>
+	</head>
+
+	<body ng-app="CSV">
+		<div ng-controller="Convert" class="container">
+			<header class="jumbotron">
+				<h1>CSV Convert</h1>
+				<br>
+				<div class="row" id="inputCtrl">
+					<div class="col-sm-6 col-xs-12">
+						<p><span class="glyphicon glyphicon-cloud-upload"></span> File Upload:</p>
+						<input type="file" id="file" name="file"/>
+					</div>
+					<div class="col-sm-6  col-xs-12">
+						<p>- OR -</p>
+						<button type="button" class="btn btn-default btn-lg" id="createBtn">Create new CSV</button>
+					</div>
+				</div>
+				<br>
+				<h2>Settings:</h2>
+				<p>
+					stopProcessing: <button type="button" ng-click="s.stopProcessing = !s.stopProcessing" class="btn btn-default">{{s.stopProcessing}}</button>,
+					ignoreCase: <button type="button" ng-click="s.ignoreCase = !s.ignoreCase" class="btn btn-default">{{s.ignoreCase}}</button>,
+					logicalGrouping: <input style="width: 100px;" placeholder="MatchAll" ng-model="s.logicalGrouping">,
+					trackAllCaptures: <button type="button" ng-click="s.trackAllCaptures = !s.trackAllCaptures" class="btn btn-default">{{s.trackAllCaptures}}</button>,
+					type: <input style="width: 100px;" placeholder="Redirect" ng-model="s.type">,
+					redirectType: <button type="button" ng-click="toggle()" class="btn btn-default">{{s.redirectType}}</button></p>
+				<br>
+				<button type="button" class="btn btn-primary btn-lg" ng-click="upload()">Convert</button>
+			</header>
+			<div>
+				<textarea class="form-control" rows="5" id="out">{{output}}</textarea>
+			</div>
+	</body>
+</html>
