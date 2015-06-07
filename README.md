@@ -11,13 +11,13 @@ orignalURL,redirectURL
 
 eg, 
 
-`http://alexsah.com/abcd,http://google.com
-http://alexsah.com/efgh,http://bing.com
-http://alexsah.com/ijkl/mnop/qrst,http://yahoo.com`
+`http://alexsah.com/abcd,http://google.com`
+`http://alexsah.com/efgh,http://bing.com`
+`http://alexsah.com/ijkl/mnop/qrst,http://yahoo.com`
 
-			see example.csv
+(example.csv)
 
-and produce me a file with something like 
+this should then produce
 
 `<rule name="http://alexsah.com/abcd" stopProcessing="true">
 <match url="^(alexsah.com/abcd.*)" ignoreCase="true" />
