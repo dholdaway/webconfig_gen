@@ -15,6 +15,8 @@ eg,
 http://alexsah.com/efgh,http://bing.com
 http://alexsah.com/ijkl/mnop/qrst,http://yahoo.com`
 
+			see example.csv
+
 and produce me a file with something like 
 
 `<rule name="http://alexsah.com/abcd" stopProcessing="true">
