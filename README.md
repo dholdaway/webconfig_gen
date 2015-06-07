@@ -11,11 +11,11 @@ orignalURL,redirectURL
 
 eg, 
 
+#####(example.csv)
 `http://alexsah.com/abcd,http://google.com`<br>
 `http://alexsah.com/efgh,http://bing.com`<br>
 `http://alexsah.com/ijkl/mnop/qrst,http://yahoo.com`
 
-(example.csv)
 
 this should then produce
 
