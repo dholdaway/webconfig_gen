@@ -19,7 +19,7 @@
 	<body ng-app="CSV">
 		<div ng-controller="Convert" class="container">
 			<header class="jumbotron">
-				<h1>CSV Convert</h1>
+				<h1>webconfig generator</h1>
 				<br>
 				<div class="row" id="inputCtrl">
 					<div class="col-sm-6 col-xs-12">
@@ -41,7 +41,7 @@
 					type: <input style="width: 100px;" placeholder="Redirect" ng-model="s.type">,
 					redirectType: <button type="button" ng-click="toggle()" class="btn btn-default">{{s.redirectType}}</button></p>
 				<br>
-				<button type="button" class="btn btn-primary btn-lg" ng-click="upload()">Convert</button>
+				<button type="button" class="btn btn-primary btn-lg" ng-click="upload()">Generate</button>
 			</header>
 			<div>
 				<textarea class="form-control" rows="5" id="out">{{output}}</textarea>
