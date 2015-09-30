@@ -1,7 +1,3 @@
-![small logo][1]
-
-[1]: https://s3-eu-west-1.amazonaws.com/eunoia-labs/images/_small.png
-
 ##***WebConfig Generator***##
 ####Usage:####
 
@@ -27,4 +23,4 @@ this should then produce
 
 you can also create rules one at a time manually.
 
-The app is running live [here](http:eunoia-labs.com/webconfig_gen)
+The app is running live [here](http://projects.eunoia-labs.com/webconfig_gen)
